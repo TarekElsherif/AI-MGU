@@ -1,4 +1,3 @@
-
 public class Constant extends Element {
 	
 	String name;
@@ -17,6 +16,10 @@ public class Constant extends Element {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public String toString() {
+		return name;
 	}
 
 }
