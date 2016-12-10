@@ -18,5 +18,6 @@ public class Constant extends Element {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 
 }
