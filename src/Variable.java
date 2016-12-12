@@ -1,5 +1,10 @@
 public class Variable extends Element {
 	
+
+	private String name;
+	private String value;
+	
+
 	public Variable(String n) {
 		super(n);
 	}
@@ -12,8 +17,20 @@ public class Variable extends Element {
 		this.name = name;
 	}
 	
+	public void setValue(String value){
+		this.value = value;
+	}
+	
+	public String getValue(){
+		return value;
+	}
+	
 	public String toString() {
 		return name;
+	}
+	
+	public int getLength(){
+		return 1;
 	}
 
 }
