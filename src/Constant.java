@@ -1,13 +1,7 @@
 public class Constant extends Element {
 	
-	String name;
-	
 	public Constant(String n) {
-		name = n;
-	}
-	
-	public Constant() {
-		
+		super(n);
 	}
 
 	public String getName() {

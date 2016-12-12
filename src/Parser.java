@@ -6,10 +6,10 @@ public class Parser {
 	}
 	
 	public Element parse(String s) {
-		s.replace("(", "/");
-		String[] parts = s.split("/");
+		String u = s.replaceFirst("\\(", "/");
+		String[] parts = u.split("/");
 		if (parts.length <= 1) {
-			parts[0] = parts[0].replace(")","").trim();
+			parts[0] = parts[0].replace(")","");
 			if (varCheck(parts[0])) {
 				return new Variable(parts[0]);
 			} else {
@@ -34,9 +34,6 @@ public class Parser {
 	
 	public static void main(String[] args) {
 		String s = "f(x,g(x),y)";
-//		s.replace("(", "/");
-//		String[] str = s.split("/");
-//		System.out.println(str.length);
 		Parser p = new Parser();
 		Element e = p.parse(s);
 		System.out.println(e.toString());
