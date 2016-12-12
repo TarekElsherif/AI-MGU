@@ -1,7 +1,10 @@
 public class Element {
 	
-	public String getName() {
-		return null;
+  String name;
+	
+  public Element(String n) {
+		name = n;
+
 	}
 
 	public void setName(String name) {

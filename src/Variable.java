@@ -1,14 +1,12 @@
 public class Variable extends Element {
 	
+
 	private String name;
 	private String value;
 	
+
 	public Variable(String n) {
-		name = n;
-	}
-	
-	public Variable() {
-		
+		super(n);
 	}
 
 	public String getName() {
