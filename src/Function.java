@@ -29,6 +29,7 @@ public class Function extends Element {
 	public void setParams(ArrayList<Element> params) {
 		this.params = params;
 	}
+
 	
 	public String toString() {
 		String s = name + "(";
@@ -43,3 +44,4 @@ public class Function extends Element {
 	}
 
 }
+
