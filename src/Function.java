@@ -34,6 +34,10 @@ public class Function extends Element {
 	public void setParams(ArrayList<Element> params) {
 		this.params = params;
 	}
+	
+	public int getLength(){
+		return params.size();
+	}
 
 	
 	public String toString() {

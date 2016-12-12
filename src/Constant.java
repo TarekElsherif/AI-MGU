@@ -1,6 +1,6 @@
 public class Constant extends Element {
 	
-	String name;
+	private String name;
 	
 	public Constant(String n) {
 		name = n;
@@ -20,6 +20,10 @@ public class Constant extends Element {
 	
 	public String toString() {
 		return name;
+	}
+	
+	public int getLength(){
+		return 1;
 	}
 
 }

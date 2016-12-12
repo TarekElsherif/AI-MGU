@@ -21,5 +21,9 @@ public class Variable extends Element {
 	public String toString() {
 		return name;
 	}
+	
+	public int getLength(){
+		return 1;
+	}
 
 }
