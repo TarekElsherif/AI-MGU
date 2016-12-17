@@ -1,4 +1,3 @@
-
 public class Parser {
 	
 	public Parser() {
@@ -25,7 +24,7 @@ public class Parser {
 	}
 	
 	public boolean varCheck(String s) {
-		if (s.equals("x") || s.equals("y") || s.equals("z")) {
+		if (s.equals("u") || s.equals("v") || s.equals("x") || s.equals("y") || s.equals("z")) {
 			return true;
 		} else {
 			return false;
@@ -35,8 +34,8 @@ public class Parser {
 	public static void main(String[] args) {
 		String s = "f(x,g(x),y)";
 		Parser p = new Parser();
-		Element e = p.parse(s);
-		System.out.println(e.toString());
+		Function e = (Function)p.parse(s);
+		System.out.println(e.getName());
 	}
 
 }

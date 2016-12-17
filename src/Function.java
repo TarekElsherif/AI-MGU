@@ -33,7 +33,6 @@ public class Function extends Element {
 	public int getLength(){
 		return params.size();
 	}
-
 	
 	public String toString() {
 		String s = name + "(";

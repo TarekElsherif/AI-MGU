@@ -1,5 +1,6 @@
 public class Constant extends Element {
 	
+	
 	public Constant(String n) {
 		super(n);
 	}
